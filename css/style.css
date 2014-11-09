@@ -1,0 +1,790 @@
+/* 
+    Template Name: Kreator Ultimate HTML5 Template
+    Authot: Pixel industry
+    Website: www.pixel-industry.com
+
+*/
+
+/* CONTENTS
+    1. Reset
+    2. Document Style
+    3. Typography
+    4. Header
+    5. Page title
+    6. Elements
+        6.1. Accordion
+        6.2. Buttons
+        6.3. Company history
+            6.3.1. Company history icon list
+            6.3.2. Company history tabs
+        6.4. Custom headings
+            6.4.1. Centered heading with subtext
+            6.4.2. Left heading with subtitle
+        6.5. Icons list
+        6.6. Image gallery with thumbnails
+        6.7. Information boxes
+        6.8. Note
+        6.9. Note rotator
+        6.10. Numbers counter stats
+        6.11. Pricing tables
+        6.12. Process icons
+        6.13. Recent blog posts
+        6.14. Recent blog posts list
+        6.15. Services box with background on hover
+        6.16. Services box with image
+        6.17. Services box with rotating icons
+        6.18. Services box with centered icon
+        6.19. Skills bar
+        6.20. Skills circular
+        6.21. Tabs horizontal
+        6.22. Tabs vertical
+        6.23. Team standard layout
+        6.24. Team vertical tabs
+        6.25. Testimonials
+        6.26. Testimonial carousel
+    7. Blog
+    8. Portfolio pages
+    9. COntact
+    10. Footer styling
+    11. Widgets
+        11.1. Widget recent blog posts
+        11.2. Twitter widget
+        11.3. Recent comments widget
+        11.4. Aside search widget
+        11.5. Error page search widget
+        11.6. Social networks photo stream widget
+        11.7. Tag cloud widget
+        11.8. Widget contact
+    12. Social links - only presentation purposes
+
+/*
+
+
+/* ==========================================================================
+    1. RESET
+============================================================================= */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ==========================================================================
+    2. DOCUMENTS STYLE 
+============================================================================= */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: #252525;
+    font-weight: 400; 
+    background-color: #fff;
+}
+
+hr.line {
+    width: 70px;
+}
+
+/* ==========================================================================
+    3. TYPOGRAPHY
+============================================================================= */
+
+a {
+    color: #252525;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #5ab124;
+}
+
+h1{
+    font-size: 28px;
+    line-height: 38px;
+}
+
+h2{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+h3{
+    font-size: 21px;
+    line-height: 31px;
+}
+
+h4{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h5{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+h6{
+    font-size: 13px;
+    line-height: 23px;
+}
+
+
+/* ==========================================================================
+    4. MAIN HEADER
+============================================================================= */
+
+/*  ---- Header-wrapper ---- */
+
+.header-wrapper ul li {
+    display: inline-block;
+}
+
+
+/*  ---- Top Bar ---- */
+
+.top-bar {
+    
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.top-bar ul.contacts {
+    float: left;
+
+}
+
+.top-bar ul.contacts li:after  {
+    content: "|";
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #ddd;
+}
+
+.top-bar ul.contacts li i {
+    color: #5ab124;
+    margin-right: 5px;
+}
+
+.top-bar ul.social {
+    float: right;
+}
+
+.top-bar ul.social li {
+    margin-left: 20px;
+}
+
+/*  ---- Header ---- */
+
+.header #logo {
+    margin-top: 30px;
+    float: left;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar-nav li {
+    cursor: pointer;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    border-top: 2px solid transparent;
+}
+
+.navbar-nav li:hover {
+    color: #5ab124;
+    border-top: 2px solid #5ab124;
+    padding-top: 30px; 
+}
+
+.navbar-nav li:hover a {
+    color: #5ab124; 
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+    5. SLIDER SECTION
+============================================================================= */
+
+section.slider {
+    background-image: url('../img/slider-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+}
+
+section.slider>.container {
+    position: relative;
+    height: inherit;
+}
+
+
+/* ---- banner ---- */
+
+.slider .banner {
+    margin-top: 140px;
+}
+
+.banner .caption-heading {
+    font-family: 'Merienda';
+    color: #5ab124;
+}
+.banner .caption-big h2{
+    font-size: 48px;
+    color: #fff;
+    background-color: #252525;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 8px 70px 8px 8px;
+    margin-bottom: 8px;
+}
+
+.banner .caption-small h5{
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    margin-top: 8px;
+}
+
+
+/* ---- working-time ---- */
+
+.working-time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.working-time-unit {
+    float: left;
+    background-color: #5ab124;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.working-time-unit:nth-child(1) {
+    background-color: #5ab124;
+}
+
+.working-time-unit:nth-child(2) {
+    background-color: #5fbb25;
+}
+
+.working-time-unit:nth-child(3) {
+    background-color: #563c326;
+}
+
+.working-time-unit .day {
+    display: block;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+
+/* ==========================================================================
+    6. SERVICES SECTION
+============================================================================= */
+section.services {
+    margin-top: 90px;
+}
+
+/* ---- heading ---- */
+
+.services .heading {
+    text-align: center;
+}
+
+.services .heading > h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.services .heading > h5 {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -0.5px;
+}
+
+/* ---- trainer-wrapper ----*/
+
+section.services .service-wrapper {
+    padding-top: 20px; 
+}
+
+section.services .trainer-wrapper {
+    width: 100%;
+}
+
+.trainer-wrapper .date,
+.trainer-wrapper .trainer-img{
+    float: left;
+    width: 97px;
+    height: 98px;
+    background-color: #5ab124;
+    color: #fff;
+    text-align: center;
+}
+
+.trainer-wrapper .date {
+    padding-top: 25px;
+}
+.trainer-wrapper .date p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.trainer-wrapper .date span {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;   
+}
+
+.trainer-wrapper .info {
+    width: 100%;
+    height: 98px;
+    background-color: #ecf6f5;
+    padding: 15px;
+}
+
+.trainer-wrapper .info i {
+    color: #5ab124;
+    margin-right: 5px;
+}
+
+.trainer-wrapper .info-top {
+    height: 50%;
+    margin-bottom: 5px;
+}
+.trainer-wrapper .info-top .training-details,
+.trainer-wrapper .info-bottom .trainer-info  {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.trainer-wrapper .info-top .btn {
+    float: right;
+}
+
+.trainer-wrapper .info-bottom p {
+    display: inline-block;
+    color: #777;
+}
+.trainer-wrapper .info-bottom .trainer-info {
+    float: left;
+}
+
+.trainer-wrapper .info-bottom .trainer-worktime {
+    float: right;
+    margin-right: 50px; 
+}
+
+/* ---- Services navigation ---- */
+
+section.services .navigation {
+    margin-top: 30px;
+    text-align: center;
+    color: #c3c8cb;
+}
+
+section.services .navigation i {
+    margin: 0 10px;
+}
+
+section.services .navigation i:hover{
+    cursor: pointer;
+    color: #5ab124;
+}
+
+
+/* ==========================================================================
+    6. WORKOUT-PLANS SECTION
+============================================================================= */
+
+.workout-plans {
+    background-image: url('../img/workout-plans-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+}
+
+.workout-plans .container {
+    padding: 90px 0;
+}
+
+.workout-plans .heading {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.workout-plans .navigation {
+    float: right;
+}
+
+.workout-plans .navigation i {
+    margin: 0 10px;
+    color: #c3c8cb;
+}
+
+.workout-plans .navigation i:hover{
+    cursor: pointer;
+    color: #5ab124;
+}
+
+/*---- FORM ---- */
+
+.plan-form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.plan-form input[type="text"],
+.plan-form input[type="email"],
+.plan-form select,
+.plan-form .select-dropdown,
+.plan-form textarea,
+.plan-form button {
+    position: relative;
+    width: 100%;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+    padding-left: 20px;
+}
+
+.plan-form input[type="text"],
+.plan-form input[type="email"],
+.plan-form select,
+.plan-form .select-dropdown {
+    height: 40px;
+}
+
+.plan-form .select-dropdown {
+    line-height: 40px;
+    color: #777;
+}
+
+.plan-form .select-dropdown:hover {
+    cursor: default;
+}
+
+.plan-form ul.checklist {
+    display: none;
+    list-style: none;
+    border: 1px solid #ddd;
+    padding: 5px 20px;
+    margin-top: -15px;
+    position: absolute;
+    z-index: 10;
+    width: 90%;
+    background: #fff;
+}
+
+.plan-form .checklist > li {
+    color: #777;
+}
+
+.plan-form .checklist > li input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.plan-form input:focus,
+.plan-form textarea:focus,
+.plan-form select:focus,
+.plan-form button:focus {
+    outline: none;
+}
+
+.plan-form select,
+.plan-form .select option {
+    color: #777;
+}
+
+.plan-form i {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #ddd;
+}
+
+.plan-form textarea {
+    padding-top: 15px;
+    padding-right: 20px;
+    resize: none;
+}
+
+.plan-form select option:first-child {
+    display: none;
+}
+
+.plan-form ::-webkit-input-placeholder {
+    color: #777;
+}
+
+.plan-form ::-moz-placeholder {
+    color: #777;
+}
+
+.plan-form :-moz-placeholder {
+    color: #777;
+}
+
+.plan-form ::-ms-input-placeholder {
+    color: #777;
+}
+
+input[type="text"].weight {
+    background-color: #5ab124;
+    color: white;
+}
+
+input.weight::-webkit-input-placeholder{
+    color: white;
+}
+
+input.weight::-moz-placeholder {
+    color: white;
+}
+
+input.weight:-moz-placeholder {
+    color: white;
+}
+
+input.weight::-ms-input-placeholder {
+    color: white;
+}
+
+.plan-form button {
+    margin-top: 15px;
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    background-color: #5ab124;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* ---- Workout ---- */
+
+.workouts img {
+    width: 100%;
+    height: 100%;
+}
+
+.workout-top,
+.workout-bottom {
+    width: 100%;
+    height: 250px;
+}
+
+.workout-top .image,
+.workout-bottom .workout-description {
+    float: left;
+    height: inherit;
+    width: 50%;
+}
+
+.workout-top .workout-description,
+.workout-bottom .image {
+    width: 50%;    
+    height: inherit;
+    float: right;
+}
+
+.workout-top .workout-description {
+    background: #5ab124;
+    position: relative;
+}
+
+.workout-top .workout-description::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #5ab124;
+    position: absolute;
+    left: -10px;
+    top: 120px;
+}
+
+.workout-bottom .workout-description {
+    background: #fff;
+    position: relative;
+}
+
+.workout-bottom .workout-description::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    right: -10px;
+    top: 120px;
+
+}
+
+.workout-description {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.workout-description table {
+    text-align: left;
+    width: 100%;
+}
+
+.workout-description caption {
+    text-align:  left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.workout-description td {
+    text-align: right;
+}
+
+.workout-top .workout-description td {
+    color: #fff;
+}
+
+.workout-bottom .workout-description td  {
+    color: #777;
+}
+
+.workout-description .btn-group {
+    margin-top: 40px;
+    float: right;
+}
+
+.workout-description .btn-group .btn {
+    margin-left: 5px;
+}
+
+
+
+
+/* ---- Button Style ----*/
+
+.btn {
+    display: inline-block;
+    background-color: #5ab124;
+    padding: 2px 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #64cc24;
+}
+
+.btn-border {
+    border: 1px solid #fff;
+}
+
+/* ==========================================================================
+    CLEARFIX
+============================================================================= */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
