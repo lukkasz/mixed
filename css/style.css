@@ -677,6 +677,10 @@ input.weight::-ms-input-placeholder {
     top: 120px;
 }
 
+.workout-top caption {
+    color :#fff;
+}
+
 .workout-bottom .workout-description {
     background: #fff;
     position: relative;
@@ -738,6 +742,129 @@ input.weight::-ms-input-placeholder {
 
 
 
+/* ==========================================================================
+    7. TIPS SECTION
+============================================================================= */
+
+.tips .container {
+    margin-top: 90px;
+}
+
+.tips .container hr.line {
+    margin-left: 0;
+    color: #ddd;
+}
+
+.tips .container h4 {
+    font-weight: 600;
+}
+
+.workout-tips .title {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    letter-spacing: -0.5px;
+}
+
+.workout-tips .title:last-child {
+    border-bottom: none;
+}
+
+
+.workout-tips i {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.workout-tips a:hover i,
+.workout-tips .active  i{
+    color: #5ab124;
+}
+
+.workout-tips .article-content {
+    color: #ddd;
+}
+
+.workout-tips .article-content a {
+    color: #5ab124;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+/* ---- News ---- */
+
+.news li {
+    padding-top: 15px;
+}
+
+.news .post {
+    height: 104px;
+    overflow: hidden;   
+}
+
+.news .post-info {
+    float: left;
+    margin-right: 10px;
+}
+
+.news .post-date {
+    background-color: #5ab124;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.news .post-comment {
+    background-color: #64cc24;
+    color: #fff;
+    padding: 2px 5px;
+    margin-left: -4px;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.news .post-comment span {
+    font-size: 9    px;
+    margin-left: 2px;
+}
+.news .post-content {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* ==========================================================================
+    8. CALL TO ACTION SECTION
+============================================================================= */
+.call-to-action {
+    margin-top: 90px;
+    background-image: url('../img/call-to-action-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135px;
+}
+
+.call-to-action .container {
+    padding-top: 50px;
+}
+
+.call-to-action .promo {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+
+.call-to-action .btn {
+    float: right;
+    padding: 10px 25px;
+    margin-top: -10px;
+    background-color: transparent;
+
+}
+
 /* ---- Button Style ----*/
 
 .btn {
@@ -747,6 +874,7 @@ input.weight::-ms-input-placeholder {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -758,6 +886,187 @@ input.weight::-ms-input-placeholder {
     border: 1px solid #fff;
 }
 
+
+/* ==========================================================================
+    9. FOOTER
+============================================================================= */
+
+footer {
+    background-color: #353e44;
+}
+
+footer > .container {
+    padding-top: 90px;
+}
+
+footer h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+footer p,
+footer li {
+    color: #bbb;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+/* ---- newsletter ---- */
+
+.newsletter {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background-color: #353e44;
+    margin-top: 20px;
+}
+
+.newsletter > input,
+.newsletter > button {
+    border: 0;
+    outline: none;
+    height: 35px;
+    color: #fff;
+}
+
+.newsletter ::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.newsletter ::-moz-placeholder {
+    color: #fff;
+}
+
+.newsletter :-moz-placeholder {
+    color: #fff;
+}
+
+.newsletter ::-ms-input-placeholder {
+    color: #fff;
+}
+
+
+.newsletter > input {
+    width: 95%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    background-color: #40484d;
+}
+
+.newsletter > button {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #5ab124;
+}
+
+.newsletter > button i {
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+/* ---- company info ---- */
+
+.company-info li {
+    border-bottom: 1px solid #485159;
+    padding: 10px 0;
+}
+
+.company-info li:first-child {
+    padding-top: 0;
+}
+
+.company-info li:last-child {
+    border-bottom: none;
+}
+
+
+/* ---- latest tweets ---- */
+
+.latest-tweets li {
+    margin-bottom: 10px;
+}
+
+.latest-tweets p {
+    padding-left: 25px;
+    margin-top: -23px;
+}
+
+
+/* ---- get in touch ---- */
+
+.get-in-touch p {
+    padding-left: 25px;
+    margin-top: -20px;
+}
+
+.get-in-touch li {
+    margin-bottom: 10px;
+}
+
+.get-in-touch span {
+    color: #fff;
+}
+
+.get-in-touch a {
+    color: #bbb;
+}
+
+
+/* ---- copyright-container ---- */
+
+.copyright-container {
+    height: 70px;
+    background-color: #31393f;
+    margin-top: 90px;
+    color: #a0a9b1;
+    font-size: 11px;
+}
+
+.copyright-container .container {
+    padding-top: 25px;
+}
+
+.copyright {
+    display: inline-block;
+}
+
+ul.terms {
+    display: inline-block;
+    float: right;
+}
+ul.terms li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+ul.terms li::after {
+    content: "/";
+    margin: 0 5px;
+}
+
+ul.terms li:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+ul.terms li a {
+    color: #a0a9b1;
+}
 /* ==========================================================================
     CLEARFIX
 ============================================================================= */

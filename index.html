@@ -364,72 +364,86 @@
         </div>
         <div class="col-lg-5 workout-tips">
           <h4>Recent Workout Tips by Our Trainers</h4>
-          <hr>
-          <article>
-            <i class="fa fa-minus-square"></i>
-            <h5>How Can I Prepare my body for workout?</h5>
-            <p>Donec fermentum, metus et porttitor porta, risus lacus porttitor mi, ac imperdiet tortor nulla sit amet ipsum. Donec consectetur...</p>
-            <a href="#">Read Full Answer <i class="fa fa-long-arrow-right"></i></a>
+          <hr class="line">
+          <article class="title active">
+            <a href="#">
+              <i class="fa fa-minus-square"></i>
+              How Can I Prepare my body for workout?
+            </a>
+            <div class="article-content">
+              <p>Donec fermentum, metus et porttitor porta, risus lacus porttitor mi, ac imperdiet tortor nulla sit amet ipsum. Donec consectetur...</p>
+              <a href="#">Read Full Answer <i class="fa fa-long-arrow-right"></i></a>
+            </div>
           </article>
-          <article>
-            <i class="fa fa-plus-square"></i>
-            <h5>How many times or hours a day I must train to get fit quickly and should I go on a diet?</h5>
+          <article class="title">
+            <a href="#">
+              <i class="fa fa-plus-square"></i>
+              How many times or hours a day I must train to get fit quickly and should I go on a diet?
+            </a>        
           </article>
-          <article>
-            <i class="fa fa-plus-square"></i>
-            <h5>Do I get a personal trainer if I join your gym?</h5>
+          <article class="title">
+            <a href="#">
+              <i class="fa fa-plus-square"></i>
+              Do I get a personal trainer if I join your gym?
+            </a> 
           </article>
-          <article>
-            <i class="fa fa-plus-square"></i>
-            <h5>Zumba training - learn dancing moves and get fit!</h5>
+          <article class="title"> 
+            <a href="#">
+              <i class="fa fa-plus-square"></i>
+              Zumba training - learn dancing moves and get fit!
+            </a>
           </article>
-        </div>
+        </div> <!-- /.workout-tips -->
         <div class="col-lg-3 news">
-          <article>
-            <div class="post-image">
-              <img src="img/post-image1.jpg" alt="post1">
-            </div>
-            <div class="post-heading">
-              <span class="post-date">June 06</span>
-              <span class="post-comment"><i class="fa fa-comments-o"></i>5</span>
-            </div>
-            <div class="post-text">
-              <p>Suspendisse orci augue, faucibus sit amet felis bibendum</p>
-            </div>
-          </article>
-          <article>
-            <div class="post-image">
-              <img src="img/post-image2.jpg" alt="post1">
-            </div>
-            <div class="post-heading">
-              <span class="post-date">June 06</span>
-              <span class="post-comment"><i class="fa fa-comments-o"></i>5</span>
-            </div>
-            <div class="post-text">
-              <p>Maecenas pellentesque, quam id consectetur suscipit</p>
-            </div>
-          </article>
-          <article>
-            <div class="post-image">
-              <img src="img/post-image3.jpg" alt="post1">
-            </div>
-            <div class="post-heading">
-              <span class="post-date">June 06</span>
-              <span class="post-comment"><i class="fa fa-comments-o"></i>5</span>
-            </div>
-            <div class="post-text">
-              <p>Suspendisse orci augue, faucibus sit amet felis bibendum</p>
-            </div>
-          </article>
-        </div>
+          <h4>Recent News &amp; Articles</h4>
+          <hr class="line">
+          <ul>
+            <li class="cf">
+              <div class="post-info">
+                <div class="post-image">
+                  <img src="img/post-image1.jpg" alt="post1">
+                </div>
+              </div>
+              <div class="post">
+                  <a href="#" class="post-date">june 06</a>
+                  <a href="#" class="post-comment"><i class="fa fa-comments-o"></i><span>5</span></a>
+                  <a href="#" class="post-content">Suspendisse orci augue, faucibus sit amet felis bibendum</a>
+              </div>
+            </li>
+            <li class="cf">
+              <div class="post-info">
+                <div class="post-image">
+                  <img src="img/post-image2.jpg" alt="post2">
+                </div>
+              </div>
+              <div class="post">
+                  <a href="#" class="post-date">june 06</a>
+                  <a href="#" class="post-comment"><i class="fa fa-comments-o"></i><span>5</span></a>
+                  <a href="#" class="post-content">Maecenas pellentesque, quam id consectetur suscipit</a>
+              </div>
+            </li>
+             <li class="cf">
+              <div class="post-info">
+                <div class="post-image">
+                  <img src="img/post-image3.jpg" alt="post2">
+                </div>
+              </div>
+              <div class="post">
+                  <a href="#" class="post-date">june 06</a>
+                  <a href="#" class="post-comment"><i class="fa fa-comments-o"></i><span>5</span></a>
+                  <a href="#" class="post-content">Suspendisse orci augue, faucibus sit amet felis bibendum</a>
+              </div>
+            </li>
+          </ul>
+        </div> <!-- /.news -->
       </div>
     </div>
   </section>
 
   <section class="call-to-action">
     <div class="container">
-      <p>25% Discount on All Workouts for New Members! Join us and Let’s Start Your Workout Today!</p>
-      <button clasS="btn">Sign up Now</button>
+      <h4 class="promo">25% Discount on All Workouts for New Members! Join us and Let’s Start Your Workout Today!</h4>
+      <a href="#" class="btn btn-border">Sign up Now</a>
     </div>
   </section>
 
@@ -439,9 +453,11 @@
         <div class="col-lg-3">
           <h5>Newsletter subscribe</h5>
           <p>Want to subscribe to our newsletter feed? Please fill the form below.</p>
-          <form action="#" class="newsletter">
-            <input type="email" placeholder="Your email address">
-            <button><i class="fa fa-envelope-o"></i></button>
+          <form action="#">
+            <label for="newsletter" class="newsletter">
+              <input id="newsletter" type="email" placeholder="Your email address">
+              <button><i class="fa fa-envelope-o fa-lg"></i></button>
+            </label>
           </form>
         </div>
         <div class="col-lg-3">
@@ -457,21 +473,21 @@
           <h5>Latest news</h5>
           <ul class="latest-tweets">
             <li>
-              <i class="fa fa-twitter"></i>
-              #themeforest Moderna Wordpress theme updated. <a href="#">http://t.co/AaY2KBbvvb</a>
+              <i class="fa fa-twitter fa-lg"></i>
+              <p>#themeforest Moderna Wordpress theme updated. <a href="#">http://t.co/AaY2KBbvvb</a></p>
             </li>
             <li>
-              <i class="fa fa-twitter"></i>
-              Metropolis updated to V1.1. Check it out on <a href="#">http://t.co/cOxvnBFs2I</a>
+              <i class="fa fa-twitter fa-lg"></i>
+              <p>Metropolis updated to V1.1. Check it out on <a href="#">http://t.co/cOxvnBFs2I</a></p>
             </li>
           </ul>
         </div>
         <div class="col-lg-3">
           <h5>Get in touch</h5>
           <ul class="get-in-touch">
-            <li><i class="fa fa-home"></i><span>Address: </span>Some Street 123, Manhattan, New York, USA</li>
-            <li><i class="fa fa-phone"></i><span>Telephone: </span><a href="tel:+00 123 3456">++00 123 3456</a></li>
-            <li><i class="fa fa-envelope"></i><span>Email: </span><a href="mailto:info@business.com">info@business.com</a></li>
+            <li><i class="fa fa-home fa-lg"></i><p><span>Address: </span>Some Street 123, Manhattan, New York, USA</p></li>
+            <li><i class="fa fa-phone fa-lg"></i><p><span>Telephone: </span><a href="tel:+00 123 3456">++00 123 3456</a></p></li>
+            <li><i class="fa fa-envelope fa-lg"></i><p><span>Email: </span><a href="mailto:info@business.com">info@business.com</a></p></li>
           </ul>
         </div>
       </div>
@@ -482,10 +498,10 @@
           <h6>MIXED. Designed and developed by PIXEL INDUSTRY</h6>
         </div>
         <ul class="terms">
-          <li>Policy</li>
-          <li>Terms of use</li>
-          <li>FAQ</li>
-          <li>Contact</li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </section>
