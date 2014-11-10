@@ -493,6 +493,8 @@ section.services .navigation i:hover{
 .plan-form {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-style: italic;
     font-size: 13px;
@@ -500,7 +502,6 @@ section.services .navigation i:hover{
 
 .plan-form input[type="text"],
 .plan-form input[type="email"],
-.plan-form select,
 .plan-form .select-dropdown,
 .plan-form textarea,
 .plan-form button {
@@ -519,9 +520,49 @@ section.services .navigation i:hover{
 
 .plan-form input[type="text"],
 .plan-form input[type="email"],
-.plan-form select,
-.plan-form .select-dropdown {
+.plan-form .select-dropdown,
+.plan-form .select {
     height: 40px;
+}
+
+.plan-form input:focus,
+.plan-form textarea:focus,
+.plan-form select:focus,
+.plan-form button:focus {
+    outline: none;
+}
+
+.plan-form button {
+    margin-top: 15px;
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    background-color: #5ab124;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.plan-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    width: 110%;
+    height: 40px;   
+    background: #fff;
+}
+
+.plan-form .select {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 20px;
+    background: #fff;
+    color: #ddd;
+    margin-bottom: 15px;
 }
 
 .plan-form .select-dropdown {
@@ -545,7 +586,9 @@ section.services .navigation i:hover{
     background: #fff;
 }
 
-.plan-form .checklist > li {
+.plan-form .checklist > li,
+.plan-form select,
+.plan-form .select option  {
     color: #777;
 }
 
@@ -553,17 +596,6 @@ section.services .navigation i:hover{
     margin-right: 5px;
 }
 
-.plan-form input:focus,
-.plan-form textarea:focus,
-.plan-form select:focus,
-.plan-form button:focus {
-    outline: none;
-}
-
-.plan-form select,
-.plan-form .select option {
-    color: #777;
-}
 
 .plan-form i {
     position: absolute;
@@ -619,17 +651,6 @@ input.weight::-ms-input-placeholder {
     color: white;
 }
 
-.plan-form button {
-    margin-top: 15px;
-    height: 42px;
-    border: none;
-    border-radius: 0;
-    background-color: #5ab124;
-    color: white;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 
 

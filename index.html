@@ -9,14 +9,14 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <!-- google web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,800,400|Raleway:400,700|Merienda:700,400' rel='stylesheet' type='text/css'>
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -80,20 +80,6 @@
               <span class="time">closed</span>
             </div>
           </div>
-          <!-- <ul>
-            <li class="working-time-unit">
-              <span class="day">mon &minus; fri</span>
-              <span class="time">08:00 &minus; 22:00</span>
-            </li>
-            <li class="working-time-unit">
-              <span class="day">sat &minus; sun</span>
-              <span class="time">12:00 &minus; 22:00</span>
-            </li>
-            <li class="working-time-unit">
-              <span class="day">holiday</span>
-              <span class="time">closed</span>
-            </li>
-          </ul> -->
         </div> <!-- / div.container .row .working-time-->
       </div> <!-- / div.container .row-->
     </div> <!-- / div.container -->
@@ -164,20 +150,21 @@
             <h3>Get Your Personalized Plan</h3>
           </div>
           <form action="#" id="myForm" class="plan-form">
-            <div class="row">
-              <div class="col-lg-6">
-                <label for="weight">
-                  <input type="text" name="weight" id="weight" class="weight" placeholder="Your Weight (kg)...">
-                </label> <!-- /weight -->
-              </div> 
-              <div class="col-lg-6">
-                <label for="desireWeight">
-                  <input type="text" name="desireWeight" id="desireWeight" placeholder="Desired Weight">
-                </label><!-- /desireWeight -->
-              </div> 
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="weight">
+                <input type="text" name="weight" id="weight" class="weight" placeholder="Your Weight (kg)...">
+              </label> <!-- /weight -->
+            </div> 
+            <div class="col-lg-6">
+              <label for="desireWeight">
+                <input type="text" name="desireWeight" id="desireWeight" placeholder="Desired Weight">
+              </label><!-- /desireWeight -->
+            </div> 
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="select">
                 <label for="timeSpan">
                   <select name="timeSpan" id="timeSpan">
                     <option value="" disabled selected>Time Span</option>
@@ -189,41 +176,30 @@
                   <i class="fa fa-sort-desc fa-lg"></i>
                 </label> <!-- /timeSpan -->
               </div>
-              <div class="col-lg-6">
-                <label for="your-height"> 
-                  <input id="your-height" type="text" placeholder="Your Height...">
-                </label> <!-- /your-height -->
+            </div>
+            <div class="col-lg-6">
+              <label for="your-height"> 
+                <input id="your-height" type="text" placeholder="Your Height...">
+              </label> <!-- /your-height -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="multi-selection">
+                <span id="select-dropdown" class="select-dropdown">Most Critical Areas (Choose Multiple)</span>
+                <ul class="checklist">
+                  <li><input type="checkbox" value="item1">Item1</li>
+                  <li><input type="checkbox" value="item2">Item2</li>
+                  <li><input type="checkbox" value="item3">Item3</li>
+                  <li><button class="checklist-btn">Ok</button></li>
+                </ul>
+                <i class="fa fa-sort-desc fa-lg"></i>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="multi-selection">
-                  <span id="select-dropwdown" class="select-dropdown">Most Critical Areas (Choose Multiple)</span>
-                  
-                  <ul class="checklist">
-                    <li><input type="checkbox" value="item1">Item1</li>
-                    <li><input type="checkbox" value="item2">Item2</li>
-                    <li><input type="checkbox" value="item3">Item3</li>
-                    <li><button class="checklist-btn">Ok</button></li>
-                  </ul>
-                  
-                  <i class="fa fa-sort-desc fa-lg"></i>
-                  
-                </div>
-                <!-- <label class="seldect">
-                  <select class="critical-area" multiple="multiple">
-                    <option value="" disabled selected>Most Critical Areas (Choose Multiple)</option>
-                    <option value="1">Area1</option>
-                    <option value="2">Area2</option>
-                    <option value="3">Area3</option>
-                    <option value="4">Area4</option>
-                  </select>
-                  <i class="fa fa-sort-desc fa-lg"></i>
-                </label> -->
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="select">
                 <label for="gendre">
                   <select id="gendre">
                     <option value="" disabled selected>Gendre</option>
@@ -233,7 +209,9 @@
                   <i class="fa fa-sort-desc fa-lg"></i>
                 </label> <!-- /gendre -->
               </div>
-              <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
+              <div class="select">
                 <label for="age">
                   <select id="age">
                     <option value="" disabled selected>Your Age</option>
@@ -247,33 +225,34 @@
                 </label> <!-- /age -->
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <label>
-                  <textarea class="textarea" name="" rows="4" placeholder="Any workouts you can't do? Please describe..."></textarea>
-                </label>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label>
+                <textarea class="textarea" name="" rows="4" placeholder="Any workouts you can't do? Please describe..."></textarea>
+              </label>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <label>
-                  <textarea name="" rows="4" placeholder="Have some cronical deseas like astma or had any operations? Please describe..."></textarea>
-                </label>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label>
+                <textarea name="" rows="4" placeholder="Have some cronical deseas like astma or had any operations? Please describe..."></textarea>
+              </label>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <label class="email">
-                  <input id="email" type="email" placeholder="Your email address, e.g. name@gmail.com">
-                </label> <!-- /email -->
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <label class="email">
+                <input id="email" type="email" placeholder="Your email address, e.g. name@gmail.com">
+              </label> <!-- /email -->
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <button type="submit" class="button">Send me my personalized plan</button>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <button type="submit" class="btn">Send me my personalized plan</button>
             </div>
-          </form> <!-- /form.plan-form -->
+          </div>
+        </form> <!-- /form.plan-form -->
         </div>
         <div class="col-lg-8 workouts">
           <div class="heading">

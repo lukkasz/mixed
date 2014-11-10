@@ -1,4 +1,4 @@
-$('#select-dropwdown').on('click', function(){
+$('#select-dropdown').on('click', function(){
 	$('.checklist').slideToggle(200);
 });
   
