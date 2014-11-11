@@ -600,6 +600,7 @@ h6{
     z-index: 10;
     width: 90%;
     background: #fff;
+    margin-left: 5px;
 }
 
 .plan-form .checklist > li,
@@ -636,10 +637,12 @@ h6{
 
 .plan-form ::-moz-placeholder {
     color: #777;
+    opacity: 1 !important;
 }
 
 .plan-form :-moz-placeholder {
     color: #777;
+    opacity: 1 !important;
 }
 
 .plan-form ::-ms-input-placeholder {
@@ -648,23 +651,23 @@ h6{
 
 input[type="text"].weight {
     background-color: #5ab124;
-    color: white;
+    color: #fff;
 }
 
 input.weight::-webkit-input-placeholder{
-    color: white;
+    color: #fff;
 }
 
 input.weight::-moz-placeholder {
-    color: white;
+    color: #fff;
 }
 
 input.weight:-moz-placeholder {
-    color: white;
+    color: #fff;
 }
 
 input.weight::-ms-input-placeholder {
-    color: white;
+    color: #fff;
 }
 
 
