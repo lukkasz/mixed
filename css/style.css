@@ -135,7 +135,9 @@ body{
 
 hr.line {
     width: 70px;
+    color: #ddd;
 }
+
 
 /* ==========================================================================
     3. TYPOGRAPHY
@@ -145,7 +147,8 @@ a {
     color: #252525;
 }
 
-a:hover{
+a:hover,
+a:active {
     text-decoration: none;
     color: #5ab124;
 }
@@ -194,13 +197,10 @@ h6{
 
 /*  ---- Top Bar ---- */
 
-.top-bar {
-    
+.top-bar {   
     padding: 25px 0;
     border-bottom: 1px solid #ddd;
 }
-
-
 
 .top-bar ul.contacts {
     float: left;
@@ -246,6 +246,10 @@ h6{
     border-top: 2px solid transparent;
 }
 
+.navbar-nav li a {
+    text-transform: uppercase;
+}
+
 .navbar-nav li:hover {
     color: #5ab124;
     border-top: 2px solid #5ab124;
@@ -256,23 +260,19 @@ h6{
     color: #5ab124; 
 }
 
-.navbar-nav li a {
-    text-transform: uppercase;
-}
-
 
 /* ==========================================================================
     5. SLIDER SECTION
 ============================================================================= */
 
-section.slider {
+.slider {
     background-image: url('../img/slider-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     height: 550px;
 }
 
-section.slider>.container {
+.slider>.container {
     position: relative;
     height: inherit;
 }
@@ -299,7 +299,6 @@ section.slider>.container {
 }
 
 .banner .caption-small h5{
-    font-size: 15px;
     letter-spacing: -0.5px;
     margin-top: 8px;
 }
@@ -329,7 +328,7 @@ section.slider>.container {
 }
 
 .working-time-unit:nth-child(3) {
-    background-color: #563c326;
+    background-color: #63c326;
 }
 
 .working-time-unit .day {
@@ -342,7 +341,8 @@ section.slider>.container {
 /* ==========================================================================
     6. SERVICES SECTION
 ============================================================================= */
-section.services {
+
+.services {
     margin-top: 90px;
 }
 
@@ -365,11 +365,11 @@ section.services {
 
 /* ---- trainer-wrapper ----*/
 
-section.services .service-wrapper {
+.services .service-wrapper {
     padding-top: 20px; 
 }
 
-section.services .trainer-wrapper {
+.services .trainer-wrapper {
     width: 100%;
 }
 
@@ -438,24 +438,24 @@ section.services .trainer-wrapper {
 
 /* ---- Services navigation ---- */
 
-section.services .navigation {
+.services .navigation {
     margin-top: 30px;
     text-align: center;
     color: #c3c8cb;
 }
 
-section.services .navigation i {
+.services .navigation i {
     margin: 0 10px;
 }
 
-section.services .navigation i:hover{
+.services .navigation i.link:hover{
     cursor: pointer;
     color: #5ab124;
 }
 
 
 /* ==========================================================================
-    6. WORKOUT-PLANS SECTION
+    7. WORKOUT-PLANS SECTION
 ============================================================================= */
 
 .workout-plans {
@@ -549,7 +549,7 @@ section.services .navigation i:hover{
     -moz-appearance: none;
     appearance: none;
     border: 0;
-    width: 110%;
+    width: 111%;
     height: 40px;   
     background: #fff;
 }
@@ -764,48 +764,65 @@ input.weight::-ms-input-placeholder {
 
 
 /* ==========================================================================
-    7. TIPS SECTION
+    8. TIPS SECTION
 ============================================================================= */
 
 .tips .container {
     margin-top: 90px;
 }
 
-.tips .container hr.line {
-    margin-left: 0;
-    color: #ddd;
-}
-
 .tips .container h4 {
     font-weight: 600;
 }
 
-.workout-tips .title {
+.tips hr {
+    margin-left: 0;
+}
+
+/* ---- Accordion ---- */
+.accordion-wrapper {
+    width: 100%;
+}
+
+.accordion {
     border-bottom: 1px solid #ddd;
+}
+
+.accordion .title{ 
     padding: 15px 0;
     letter-spacing: -0.5px;
 }
 
-.workout-tips .title:last-child {
+.accordion:last-child {
     border-bottom: none;
 }
 
-
-.workout-tips i {
-    color: #aaa;
-    margin-right: 10px;
+.accordion .title a{
+    width: 100%;
 }
 
-.workout-tips a:hover i,
-.workout-tips .active  i{
+.accordion .title i {
+    margin-right: 5px;
+    color: #aaa;
+}
+
+.accordion .title a .fa-minus-square,
+.accordion .title a:hover i {
     color: #5ab124;
 }
 
-.workout-tips .article-content {
-    color: #ddd;
+.accordion .title span {
+    display: block;
+    margin: -22px 20px 0;
 }
 
-.workout-tips .article-content a {
+.accordion .content{
+    margin-bottom: 15px;
+    display: none;
+    margin: auto 20px;
+}
+
+.accordion .content a {
     color: #5ab124;
     display: block;
     text-align: right;
@@ -857,8 +874,9 @@ input.weight::-ms-input-placeholder {
 }
 
 
+
 /* ==========================================================================
-    8. CALL TO ACTION SECTION
+    9. CALL TO ACTION SECTION
 ============================================================================= */
 .call-to-action {
     margin-top: 90px;
@@ -961,18 +979,22 @@ footer i {
 
 .newsletter ::-webkit-input-placeholder {
     color: #fff;
+    font-style: italic;
 }
 
 .newsletter ::-moz-placeholder {
     color: #fff;
+    font-style: italic;
 }
 
 .newsletter :-moz-placeholder {
     color: #fff;
+    font-style: italic;
 }
 
 .newsletter ::-ms-input-placeholder {
     color: #fff;
+    font-style: italic;
 }
 
 
@@ -1059,7 +1081,11 @@ footer i {
 }
 
 .copyright-container .container {
-    padding-top: 25px;
+    padding-top: 15px;
+}
+
+.copyright-container .container .row {
+    padding: 0;
 }
 
 .copyright {
@@ -1087,6 +1113,10 @@ ul.terms li:last-child::after {
 
 ul.terms li a {
     color: #a0a9b1;
+}
+
+ul.terms li a:hover {
+    color: #5ab124;
 }
 /* ==========================================================================
     CLEARFIX
