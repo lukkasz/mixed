@@ -14,10 +14,6 @@
     h6 =  11px
     p  =  13px
 
-
-
-
-
 */
 
 
@@ -149,9 +145,48 @@ body{
     background-color: #fff;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 hr.line {
     width: 70px;
     color: #ddd;
+}
+
+/* ---- Button Style ----*/
+
+.btn {
+    background-color: #5ab124;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #64cc24;
+    color: #fff;
+}
+
+.btn-border {
+    border: 1px solid #fff;
+}
+
+/* ---- Font Awesome navigation ---- */
+
+.navigation > i {
+    margin: 0 10px;
+    color: #c3c8cb;
+}
+
+.navigation > i.link:hover{
+    cursor: pointer;
+    color: #5ab124;
 }
 
 
@@ -161,31 +196,33 @@ hr.line {
 
 a {
     color: #252525;
+    outline: 0;
 }
 
-a:hover,
-a:active {
+a:hover, 
+a:focus {
     text-decoration: none;
     color: #5ab124;
+    outline: 0;
 }
 
 h1{
-    font-size: 28px;
+    font-size: 24px;
     line-height: 38px;
 }
 
 h2{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 35px;
 }
 
 h3{
-    font-size: 21px;
+    font-size: 18px;
     line-height: 31px;
 }
 
 h4{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
 }
 
@@ -195,7 +232,7 @@ h5{
 }
 
 h6{
-    font-size: 13px;
+    font-size: 11px;
     line-height: 23px;
 }
 
@@ -208,6 +245,7 @@ h6{
 
 .header-wrapper ul li {
     display: inline-block;
+    font-size: 12px;
 }
 
 
@@ -243,15 +281,19 @@ h6{
     margin-left: 20px;
 }
 
+.top-bar ul.social li i {
+    font-size: 14px;
+}
+
 /*  ---- Header ---- */
 
 .header #logo {
-    margin-top: 30px;
     float: left;
+    margin-top: 30px;
 }
 
 .navbar {
-    float: right;
+    float: right;    
 }
 
 .navbar-nav li {
@@ -263,11 +305,12 @@ h6{
 }
 
 .navbar-nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .navbar-nav li:hover {
-    color: #5ab124;
     border-top: 2px solid #5ab124;
     padding-top: 30px; 
 }
@@ -275,6 +318,7 @@ h6{
 .navbar-nav li:hover a {
     color: #5ab124; 
 }
+
 
 
 /* ==========================================================================
@@ -303,19 +347,23 @@ h6{
 .banner .caption-heading {
     font-family: 'Merienda';
     color: #5ab124;
+    font-size: 21px;
+    margin-bottom: 10px;
 }
-.banner .caption-big h2{
+.banner .caption-big {
     font-size: 48px;
+    font-weight: 800;
     color: #fff;
     background-color: #252525;
     display: inline-block;
     text-transform: uppercase;
-    padding: 8px 70px 8px 8px;
+    padding: 15px 10px;
     margin-bottom: 8px;
 }
 
-.banner .caption-small h5{
-    letter-spacing: -0.5px;
+.banner .caption-small{
+    font-size: 15px;
+    letter-spacing: 0;
     margin-top: 8px;
 }
 
@@ -351,6 +399,12 @@ h6{
     display: block;
     text-transform: uppercase;
     font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.working-time-unit .time {
+    text-transform: uppercase;
 }
 
 
@@ -369,11 +423,10 @@ h6{
 }
 
 .services .heading > h2 {
-    font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.services .heading > h5 {
+.services .heading > p {
     font-size: 14px;
     color: #999;
     letter-spacing: -0.5px;
@@ -389,10 +442,14 @@ h6{
     width: 100%;
 }
 
+.trainer-wrapper h4 {
+    font-weight: 600;
+}
+
 .trainer-wrapper .date,
 .trainer-wrapper .trainer-img{
     float: left;
-    width: 97px;
+    width: 98px;
     height: 98px;
     background-color: #5ab124;
     color: #fff;
@@ -401,10 +458,8 @@ h6{
 
 .trainer-wrapper .date {
     padding-top: 25px;
-}
-.trainer-wrapper .date p {
     text-transform: uppercase;
-    text-align: center;
+    text-align: center;  
 }
 
 .trainer-wrapper .date span {
@@ -417,7 +472,8 @@ h6{
     width: 100%;
     height: 98px;
     background-color: #ecf6f5;
-    padding: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 .trainer-wrapper .info i {
@@ -425,48 +481,33 @@ h6{
     margin-right: 5px;
 }
 
-.trainer-wrapper .info-top {
-    height: 50%;
-    margin-bottom: 5px;
+.trainer-wrapper .info-top { 
+    margin-bottom: 10px;
 }
-.trainer-wrapper .info-top .training-details,
-.trainer-wrapper .info-bottom .trainer-info  {
+
+.training-details,
+.trainer-info  {
     display: inline-block;
     margin-left: 15px;
 }
 
-.trainer-wrapper .info-top .btn {
+.info-top .btn,
+.trainer-worktime {
     float: right;
 }
 
-.trainer-wrapper .info-bottom p {
+.info-bottom p {
     display: inline-block;
     color: #777;
 }
-.trainer-wrapper .info-bottom .trainer-info {
-    float: left;
-}
 
-.trainer-wrapper .info-bottom .trainer-worktime {
-    float: right;
+.trainer-worktime {
     margin-right: 50px; 
 }
-
-/* ---- Services navigation ---- */
 
 .services .navigation {
     margin-top: 30px;
     text-align: center;
-    color: #c3c8cb;
-}
-
-.services .navigation i {
-    margin: 0 10px;
-}
-
-.services .navigation i.link:hover{
-    cursor: pointer;
-    color: #5ab124;
 }
 
 
@@ -478,12 +519,19 @@ h6{
     background-image: url('../img/workout-plans-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x:center; 
     margin-top: 90px;
 }
 
 .workout-plans .container {
     padding: 90px 0;
 }
+
+.workout-plans h3,
+.workout-plans h4 {
+    font-weight: 600;
+}
+
 
 .workout-plans .heading {
     margin-bottom: 30px;
@@ -494,34 +542,15 @@ h6{
     float: right;
 }
 
-.workout-plans .navigation i {
-    margin: 0 10px;
-    color: #c3c8cb;
-}
 
-.workout-plans .navigation i:hover{
-    cursor: pointer;
-    color: #5ab124;
-}
-
-/*---- FORM ---- */
-
-.plan-form {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-style: italic;
-    font-size: 13px;
-}
+/*---- FORM for personal plan---- */
 
 .plan-form input[type="text"],
 .plan-form input[type="email"],
 .plan-form .select-dropdown,
-.plan-form textarea,
-.plan-form button {
+.plan-form textarea {
     position: relative;
+    font-style: italic;
     width: 100%;
     display: block;
     -webkit-appearance: none;
@@ -549,15 +578,10 @@ h6{
 }
 
 .plan-form button {
+    width: 100%;
     margin-top: 15px;
     height: 42px;
-    border: none;
-    border-radius: 0;
-    background-color: #5ab124;
-    color: white;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: uppercase;
+    border: 0;
 }
 
 .plan-form select {
@@ -579,6 +603,7 @@ h6{
     background: #fff;
     color: #ddd;
     margin-bottom: 15px;
+    font-style: italic;
 }
 
 .plan-form .select-dropdown {
@@ -612,7 +637,6 @@ h6{
 .plan-form .checklist > li input[type="checkbox"] {
     margin-right: 5px;
 }
-
 
 .plan-form i {
     position: absolute;
@@ -671,14 +695,7 @@ input.weight::-ms-input-placeholder {
 }
 
 
-
-
 /* ---- Workout ---- */
-
-.workouts img {
-    width: 100%;
-    height: 100%;
-}
 
 .workout-top,
 .workout-bottom {
@@ -686,7 +703,7 @@ input.weight::-ms-input-placeholder {
     height: 250px;
 }
 
-.workout-top .image,
+.workout-top .workout-image,
 .workout-bottom .workout-description {
     float: left;
     height: inherit;
@@ -694,7 +711,7 @@ input.weight::-ms-input-placeholder {
 }
 
 .workout-top .workout-description,
-.workout-bottom .image {
+.workout-bottom .workout-image {
     width: 50%;    
     height: inherit;
     float: right;
@@ -752,10 +769,7 @@ input.weight::-ms-input-placeholder {
 
 .workout-description caption {
     text-align:  left;
-    font-size: 16px;
-    font-weight: 600;
     margin-bottom: 10px;
-
 }
 
 .workout-description td {
@@ -865,6 +879,11 @@ input.weight::-ms-input-placeholder {
     margin-right: 10px;
 }
 
+.news .post-image {
+    width: 100px;
+    height: 100px;
+}
+
 .news .post-date {
     background-color: #5ab124;
     color: #fff;
@@ -923,26 +942,6 @@ input.weight::-ms-input-placeholder {
 
 }
 
-/* ---- Button Style ----*/
-
-.btn {
-    display: inline-block;
-    background-color: #5ab124;
-    padding: 2px 18px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: #fff;
-    background: #64cc24;
-}
-
-.btn-border {
-    border: 1px solid #fff;
-}
 
 
 /* ==========================================================================

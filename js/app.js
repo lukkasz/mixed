@@ -30,7 +30,7 @@ $(document).ready(function() {
 		$('.checklist').slideToggle(200);
 	});
   
- 	$('.checklist-btn').on('click', function(e){
+ 	$('.checklist').on('click','.btn', function(e){
  		e.preventDefault();
  		$('.checklist').slideUp(200);
 	});
