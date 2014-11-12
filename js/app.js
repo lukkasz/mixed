@@ -1,28 +1,6 @@
 $(document).ready(function() {
 
   /*****************************************************
-    OWLCAROUSEL PLUGIN
-  ******************************************************/
-
-	var owl = $("#owl-example");
-     
-	owl.owlCarousel({
-   				
-   		itemsDesktop: [1170],
-   		singleItem:true,
-   		slideSpeed: 300,
-   		pagination: false
-  });
-   	
-  $(".next").click(function(){
-    owl.trigger('owl.next');
-  });
-  		
-	$(".prev").click(function(){
-   	owl.trigger('owl.prev');
- 	});
-
-  /*****************************************************
     MULTIPLE DROPDOWN WITH CHECKBOXES
   ******************************************************/
 
@@ -50,6 +28,29 @@ $(document).ready(function() {
     $accordion.siblings()
       .find('.content').slideUp().end()
       .find('i').removeClass('fa-minus-square');
+  });
+  
+
+  /*****************************************************
+    OWLCAROUSEL PLUGIN
+  ******************************************************/
+
+  var owl = $("#owl-example");
+     
+  owl.owlCarousel({
+          
+      itemsDesktop: [1170],
+      singleItem:true,
+      slideSpeed: 300,
+      pagination: false
+  });
+    
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  });
+      
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
   });
 
 });
