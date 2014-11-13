@@ -5,72 +5,38 @@
 
 */
 
-/*
-    h1 =  24px
-    h2 =  22px
-    h3 =  18px
-    h4 =  16px
-    h5 =  15px
-    h6 =  11px
-    p  =  13px
-
-*/
-
 
 /* CONTENTS
     1. Reset
     2. Document Style
+        2.1. Button Syle
+        2.2. Font Awesome navigation
     3. Typography
-    4. Header
-    5. Page title
-    6. Elements
-        6.1. Accordion
-        6.2. Buttons
-        6.3. Company history
-            6.3.1. Company history icon list
-            6.3.2. Company history tabs
-        6.4. Custom headings
-            6.4.1. Centered heading with subtext
-            6.4.2. Left heading with subtitle
-        6.5. Icons list
-        6.6. Image gallery with thumbnails
-        6.7. Information boxes
-        6.8. Note
-        6.9. Note rotator
-        6.10. Numbers counter stats
-        6.11. Pricing tables
-        6.12. Process icons
-        6.13. Recent blog posts
-        6.14. Recent blog posts list
-        6.15. Services box with background on hover
-        6.16. Services box with image
-        6.17. Services box with rotating icons
-        6.18. Services box with centered icon
-        6.19. Skills bar
-        6.20. Skills circular
-        6.21. Tabs horizontal
-        6.22. Tabs vertical
-        6.23. Team standard layout
-        6.24. Team vertical tabs
-        6.25. Testimonials
-        6.26. Testimonial carousel
-    7. Blog
-    8. Portfolio pages
-    9. COntact
-    10. Footer styling
-    11. Widgets
-        11.1. Widget recent blog posts
-        11.2. Twitter widget
-        11.3. Recent comments widget
-        11.4. Aside search widget
-        11.5. Error page search widget
-        11.6. Social networks photo stream widget
-        11.7. Tag cloud widget
-        11.8. Widget contact
-    12. Social links - only presentation purposes
+    4. Main Header
+        4.1. Top Bar
+        4.2. Header
+    5. Slider Section
+        5.1. Banner
+        5.2. Working time
+    6. Service Section
+        6.1. Heading
+        6.2. Trainer-wrapper
+    7. Workoutplans Section
+        7.1. Personal Plan Form
+        7.2. Workout
+    8. Tips Section
+        8.1. Accordion
+        8.2. News
+    9. Call To Action
+   10. Footer
+        10.1. Newsletter
+        10.2. Company Info
+        10.3. Latest Tweets
+        10.4. Get In Touch
+        10.5. Copyright 
+   11. ClearFix
 
-/*
-
+*/
 
 /* ==========================================================================
     1. RESET
@@ -155,39 +121,40 @@ hr.line {
     color: #ddd;
 }
 
-/* ---- Button Style ----*/
+    /* ---- 2.1. Button Style ---- */
 
-.btn {
-    background-color: #5ab124;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 4px 20px;
-    text-transform: uppercase;
+    .btn {
+        background-color: #5ab124;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 4px 20px;
+        text-transform: uppercase;
+    }
+
+    .btn:hover {
+        background: #64cc24;
+        color: #fff;
+    }
+
+    .btn-border {
+        border: 1px solid #fff;
+    }
+
+    /* ---- 2.2. Font Awesome navigation ---- */
+
+    .navigation > i {
+        margin: 0 10px;
+        color: #c3c8cb;
+    }
+
+    .navigation > i.link:hover{
+        cursor: pointer;
+        color: #5ab124;
 }
 
-.btn:hover {
-    background: #64cc24;
-    color: #fff;
-}
-
-.btn-border {
-    border: 1px solid #fff;
-}
-
-/* ---- Font Awesome navigation ---- */
-
-.navigation > i {
-    margin: 0 10px;
-    color: #c3c8cb;
-}
-
-.navigation > i.link:hover{
-    cursor: pointer;
-    color: #5ab124;
-}
 
 
 /* ==========================================================================
@@ -237,11 +204,11 @@ h6{
 }
 
 
+
 /* ==========================================================================
     4. MAIN HEADER
 ============================================================================= */
 
-/*  ---- Header-wrapper ---- */
 
 .header-wrapper ul li {
     display: inline-block;
@@ -249,75 +216,75 @@ h6{
 }
 
 
-/*  ---- Top Bar ---- */
+    /*  ---- 4.1. Top Bar ---- */
 
-.top-bar {   
-    padding: 25px 0;
-    border-bottom: 1px solid #ddd;
-}
+    .top-bar {   
+        padding: 25px 0;
+        border-bottom: 1px solid #ddd;
+    }
 
-.top-bar ul.contacts {
-    float: left;
+    .top-bar ul.contacts {
+        float: left;
 
-}
+    }
 
-.top-bar ul.contacts li:after  {
-    content: "|";
-    margin-left: 15px;
-    margin-right: 15px;
-    color: #ddd;
-}
+    .top-bar ul.contacts li:after  {
+        content: "|";
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #ddd;
+    }
 
-.top-bar ul.contacts li i {
-    color: #5ab124;
-    margin-right: 5px;
-}
+    .top-bar ul.contacts li i {
+        color: #5ab124;
+        margin-right: 5px;
+    }
 
-.top-bar ul.social {
-    float: right;
-}
+    .top-bar ul.social {
+        float: right;
+    }
 
-.top-bar ul.social li {
-    margin-left: 20px;
-}
+    .top-bar ul.social li {
+        margin-left: 20px;
+    }
 
-.top-bar ul.social li i {
-    font-size: 14px;
-}
+    .top-bar ul.social li i {
+        font-size: 14px;
+    }
 
-/*  ---- Header ---- */
+    /*  ---- 4.2. Header ---- */
 
-.header #logo {
-    float: left;
-    margin-top: 30px;
-}
+    .header #logo {
+        float: left;
+        margin-top: 30px;
+    }
 
-.navbar {
-    float: right;    
-}
+    .navbar {
+        float: right;    
+    }
 
-.navbar-nav li {
-    cursor: pointer;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 30px;
-    border-top: 2px solid transparent;
-}
+    .navbar-nav li {
+        cursor: pointer;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        border-top: 2px solid transparent;
+    }
 
-.navbar-nav li a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-}
+    .navbar-nav li a {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 
-.navbar-nav li:hover {
-    border-top: 2px solid #5ab124;
-    padding-top: 30px; 
-}
+    .navbar-nav li:hover {
+        border-top: 2px solid #5ab124;
+        padding-top: 30px; 
+    }
 
-.navbar-nav li:hover a {
-    color: #5ab124; 
-}
+    .navbar-nav li:hover a {
+        color: #5ab124; 
+    }
 
 
 
@@ -332,80 +299,80 @@ h6{
     height: 550px;
 }
 
-.slider>.container {
+.slider > .container {
     position: relative;
     height: inherit;
 }
 
 
-/* ---- banner ---- */
+    /* ---- 5.1. banner ---- */
 
-.slider .banner {
-    margin-top: 140px;
-}
+    .slider .banner {
+        margin-top: 140px;
+    }
 
-.banner .caption-heading {
-    font-family: 'Merienda';
-    color: #5ab124;
-    font-size: 21px;
-    margin-bottom: 10px;
-}
-.banner .caption-big {
-    font-size: 48px;
-    font-weight: 800;
-    color: #fff;
-    background-color: #252525;
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 15px 10px;
-    margin-bottom: 8px;
-}
+    .banner .caption-heading {
+        font-family: 'Merienda';
+        color: #5ab124;
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .banner .caption-big {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        background-color: #252525;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 15px 10px;
+        margin-bottom: 8px;
+    }
 
-.banner .caption-small{
-    font-size: 15px;
-    letter-spacing: 0;
-    margin-top: 8px;
-}
+    .banner .caption-small{
+        font-size: 15px;
+        letter-spacing: 0;
+        margin-top: 8px;
+    }
 
 
-/* ---- working-time ---- */
+    /* ---- 5.2. working-time ---- */
 
-.working-time {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.working-time-unit {
-    float: left;
-    background-color: #5ab124;
-    padding: 40px;
-    text-align: center;
-    color: #fff;
-}
+    .working-time {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .working-time-unit {
+        float: left;
+        background-color: #5ab124;
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+    }
 
-.working-time-unit:nth-child(1) {
-    background-color: #5ab124;
-}
+    .working-time-unit:nth-child(1) {
+        background-color: #5ab124;
+    }
 
-.working-time-unit:nth-child(2) {
-    background-color: #5fbb25;
-}
+    .working-time-unit:nth-child(2) {
+        background-color: #5fbb25;
+    }
 
-.working-time-unit:nth-child(3) {
-    background-color: #63c326;
-}
+    .working-time-unit:nth-child(3) {
+        background-color: #63c326;
+    }
 
-.working-time-unit .day {
-    display: block;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 31px;
-}
+    .working-time-unit .day {
+        display: block;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 31px;
+    }
 
-.working-time-unit .time {
-    text-transform: uppercase;
-}
+    .working-time-unit .time {
+        text-transform: uppercase;
+    }
 
 
 /* ==========================================================================
@@ -416,99 +383,99 @@ h6{
     margin-top: 90px;
 }
 
-/* ---- heading ---- */
+    /* ---- 6.1. heading ---- */
 
-.services .heading {
-    text-align: center;
-}
+    .services .heading {
+        text-align: center;
+    }
 
-.services .heading > h2 {
-    font-weight: 600;
-}
+    .services .heading > h2 {
+        font-weight: 600;
+    }
 
-.services .heading > p {
-    font-size: 14px;
-    color: #999;
-    letter-spacing: -0.5px;
-}
+    .services .heading > p {
+        font-size: 14px;
+        color: #999;
+        letter-spacing: -0.5px;
+    }
 
-/* ---- trainer-wrapper ----*/
+    /* ---- 6.2. trainer wrapper ----*/
 
-.services .service-wrapper {
-    padding-top: 20px; 
-}
+    .services .service-wrapper {
+        padding-top: 20px; 
+    }
 
-.services .trainer-wrapper {
-    width: 100%;
-}
+    .services .trainer-wrapper {
+        width: 100%;
+    }
 
-.trainer-wrapper h4 {
-    font-weight: 600;
-}
+    .trainer-wrapper h4 {
+        font-weight: 600;
+    }
 
-.trainer-wrapper .date,
-.trainer-wrapper .trainer-img{
-    float: left;
-    width: 98px;
-    height: 98px;
-    background-color: #5ab124;
-    color: #fff;
-    text-align: center;
-}
+    .trainer-wrapper .date,
+    .trainer-wrapper .trainer-img{
+        float: left;
+        width: 98px;
+        height: 98px;
+        background-color: #5ab124;
+        color: #fff;
+        text-align: center;
+    }
 
-.trainer-wrapper .date {
-    padding-top: 25px;
-    text-transform: uppercase;
-    text-align: center;  
-}
+    .trainer-wrapper .date {
+        padding-top: 25px;
+        text-transform: uppercase;
+        text-align: center;  
+    }
 
-.trainer-wrapper .date span {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;   
-}
+    .trainer-wrapper .date span {
+        display: block;
+        font-size: 30px;
+        font-weight: 600;   
+    }
 
-.trainer-wrapper .info {
-    width: 100%;
-    height: 98px;
-    background-color: #ecf6f5;
-    padding-top: 15px;
-    padding-right: 15px;
-}
+    .trainer-wrapper .info {
+        width: 100%;
+        height: 98px;
+        background-color: #ecf6f5;
+        padding-top: 15px;
+        padding-right: 15px;
+    }
 
-.trainer-wrapper .info i {
-    color: #5ab124;
-    margin-right: 5px;
-}
+    .trainer-wrapper .info i {
+        color: #5ab124;
+        margin-right: 5px;
+    }
 
-.trainer-wrapper .info-top { 
-    margin-bottom: 10px;
-}
+    .trainer-wrapper .info-top { 
+        margin-bottom: 10px;
+    }
 
-.training-details,
-.trainer-info  {
-    display: inline-block;
-    margin-left: 15px;
-}
+    .training-details,
+    .trainer-info  {
+        display: inline-block;
+        margin-left: 15px;
+    }
 
-.info-top .btn,
-.trainer-worktime {
-    float: right;
-}
+    .info-top .btn,
+    .trainer-worktime {
+        float: right;
+    }
 
-.info-bottom p {
-    display: inline-block;
-    color: #777;
-}
+    .info-bottom p {
+        display: inline-block;
+        color: #777;
+    }
 
-.trainer-worktime {
-    margin-right: 50px; 
-}
+    .trainer-worktime {
+        margin-right: 50px; 
+    }
 
-.services .navigation {
-    margin-top: 30px;
-    text-align: center;
-}
+    .services .navigation {
+        margin-top: 30px;
+        text-align: center;
+    }
 
 
 /* ==========================================================================
@@ -544,258 +511,258 @@ h6{
 }
 
 
-/*---- FORM for personal plan---- */
+     /* ---- 7.1. personal plan form ---- */
 
-.plan-form input[type="text"],
-.plan-form input[type="email"],
-.plan-form .select-dropdown,
-.plan-form textarea {
-    position: relative;
-    font-style: italic;
-    width: 100%;
-    display: block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background: #fff;
-    padding-left: 20px;
-}
+    .plan-form input[type="text"],
+    .plan-form input[type="email"],
+    .plan-form .select-dropdown,
+    .plan-form textarea {
+        position: relative;
+        font-style: italic;
+        width: 100%;
+        display: block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        background: #fff;
+        padding-left: 20px;
+    }
 
-.plan-form input[type="text"],
-.plan-form input[type="email"],
-.plan-form .select-dropdown,
-.plan-form .select {
-    height: 40px;
-}
+    .plan-form input[type="text"],
+    .plan-form input[type="email"],
+    .plan-form .select-dropdown,
+    .plan-form .select {
+        height: 40px;
+    }
 
-.plan-form input:focus,
-.plan-form textarea:focus,
-.plan-form select:focus,
-.plan-form button:focus {
-    outline: none;
-}
+    .plan-form input:focus,
+    .plan-form textarea:focus,
+    .plan-form select:focus,
+    .plan-form button:focus {
+        outline: none;
+    }
 
-.plan-form button {
-    width: 100%;
-    margin-top: 15px;
-    height: 42px;
-    border: 0;
-}
+    .plan-form button {
+        width: 100%;
+        margin-top: 15px;
+        height: 42px;
+        border: 0;
+    }
 
-.plan-form select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
-    width: 111%;
-    height: 40px;   
-    background: #fff;
-}
+    .plan-form select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 0;
+        width: 111%;
+        height: 40px;   
+        background: #fff;
+    }
 
-.plan-form .select {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding-left: 20px;
-    background: #fff;
-    color: #ddd;
-    margin-bottom: 15px;
-    font-style: italic;
-}
+    .plan-form .select {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding-left: 20px;
+        background: #fff;
+        color: #ddd;
+        margin-bottom: 15px;
+        font-style: italic;
+    }
 
-.plan-form .select-dropdown {
-    line-height: 40px;
-    color: #777;
-}
+    .plan-form .select-dropdown {
+        line-height: 40px;
+        color: #777;
+    }
 
-.plan-form .select-dropdown:hover {
-    cursor: default;
-}
+    .plan-form .select-dropdown:hover {
+        cursor: default;
+    }
 
-.plan-form ul.checklist {
-    display: none;
-    list-style: none;
-    border: 1px solid #ddd;
-    padding: 5px 20px;
-    margin-top: -15px;
-    position: absolute;
-    z-index: 10;
-    width: 90%;
-    background: #fff;
-    margin-left: 5px;
-}
+    .plan-form ul.checklist {
+        display: none;
+        list-style: none;
+        border: 1px solid #ddd;
+        padding: 5px 20px;
+        margin-top: -15px;
+        position: absolute;
+        z-index: 10;
+        width: 90%;
+        background: #fff;
+        margin-left: 5px;
+    }
 
-.plan-form .checklist > li,
-.plan-form select,
-.plan-form .select option  {
-    color: #777;
-}
+    .plan-form .checklist > li,
+    .plan-form select,
+    .plan-form .select option  {
+        color: #777;
+    }
 
-.plan-form .checklist > li input[type="checkbox"] {
-    margin-right: 5px;
-}
+    .plan-form .checklist > li input[type="checkbox"] {
+        margin-right: 5px;
+    }
 
-.plan-form i {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: #ddd;
-}
+    .plan-form i {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        color: #ddd;
+    }
 
-.plan-form textarea {
-    padding-top: 15px;
-    padding-right: 20px;
-    resize: none;
-}
+    .plan-form textarea {
+        padding-top: 15px;
+        padding-right: 20px;
+        resize: none;
+    }
 
-.plan-form select option:first-child {
-    display: none;
-}
+    .plan-form select option:first-child {
+        display: none;
+    }
 
-.plan-form ::-webkit-input-placeholder {
-    color: #777;
-}
+    .plan-form ::-webkit-input-placeholder {
+        color: #777;
+    }
 
-.plan-form ::-moz-placeholder {
-    color: #777;
-    opacity: 1 !important;
-}
+    .plan-form ::-moz-placeholder {
+        color: #777;
+        opacity: 1 !important;
+    }
 
-.plan-form :-moz-placeholder {
-    color: #777;
-    opacity: 1 !important;
-}
+    .plan-form :-moz-placeholder {
+        color: #777;
+        opacity: 1 !important;
+    }
 
-.plan-form ::-ms-input-placeholder {
-    color: #777;
-}
+    .plan-form ::-ms-input-placeholder {
+        color: #777;
+    }
 
-input[type="text"].weight {
-    background-color: #5ab124;
-    color: #fff;
-}
+    input[type="text"].weight {
+        background-color: #5ab124;
+        color: #fff;
+    }
 
-input.weight::-webkit-input-placeholder{
-    color: #fff;
-}
+    input.weight::-webkit-input-placeholder{
+        color: #fff;
+    }
 
-input.weight::-moz-placeholder {
-    color: #fff;
-}
+    input.weight::-moz-placeholder {
+        color: #fff;
+    }
 
-input.weight:-moz-placeholder {
-    color: #fff;
-}
+    input.weight:-moz-placeholder {
+        color: #fff;
+    }
 
-input.weight::-ms-input-placeholder {
-    color: #fff;
-}
+    input.weight::-ms-input-placeholder {
+        color: #fff;
+    }
 
 
-/* ---- Workout ---- */
+    /* ---- 7.2. Workout ---- */
 
-.heading span {
-    color: #858b8f;
-    font-weight: 400;
-}
-.heading > i {
-    margin: 0 10px;
-}
+    .heading span {
+        color: #858b8f;
+        font-weight: 400;
+    }
+    .heading > i {
+        margin: 0 10px;
+    }
 
-.workout-top,
-.workout-bottom {
-    width: 100%;
-    height: 250px;
-}
+    .workout-top,
+    .workout-bottom {
+        width: 100%;
+        height: 250px;
+    }
 
-.workout-left {
-    float: left;
-}
+    .workout-left {
+        float: left;
+    }
 
-.workout-right {
-    float: right;
-}
+    .workout-right {
+        float: right;
+    }
 
-.workout-top {
-    background: #5ab124;
-}
+    .workout-top {
+        background: #5ab124;
+    }
 
-.workout-top caption,
-.workout-top td {
-    color: #fff;
-}
+    .workout-top caption,
+    .workout-top td {
+        color: #fff;
+    }
 
-.workout-bottom {
-    background: #fff;
-}
+    .workout-bottom {
+        background: #fff;
+    }
 
-.workout-bottom td{
-    color: #777;
-}
+    .workout-bottom td{
+        color: #777;
+    }
 
-.workout-image,
-.workout-description {
-    height: inherit;
-    width: 50%;
-}
+    .workout-image,
+    .workout-description {
+        height: inherit;
+        width: 50%;
+    }
 
-.workout-description {
-    position: relative;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
+    .workout-description {
+        position: relative;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 
-.workout-description table {
-    text-align: left;
-    width: 100%;
-}
+    .workout-description table {
+        text-align: left;
+        width: 100%;
+    }
 
-.workout-description td {
-    text-align: right;
-}
+    .workout-description td {
+        text-align: right;
+    }
 
-.workout-description caption {
-    text-align:  left;
-    margin-bottom: 10px;
-}
+    .workout-description caption {
+        text-align:  left;
+        margin-bottom: 10px;
+    }
 
-.workout-description .btn-group {
-    margin-top: 40px;
-    float: right;
-}
+    .workout-description .btn-group {
+        margin-top: 40px;
+        float: right;
+    }
 
-.workout-description .btn-group .btn {
-    margin-left: 5px;
-}
+    .workout-description .btn-group .btn {
+        margin-left: 5px;
+    }
 
-.workout-top > .workout-description::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid #5ab124;
-    position: absolute;
-    left: -10px;
-    top: 120px;
-}
+    .workout-top > .workout-description::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #5ab124;
+        position: absolute;
+        left: -10px;
+        top: 120px;
+    }
 
-.workout-bottom > .workout-description::after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #fff;
-    right: -10px;
-    top: 120px;
-}
+    .workout-bottom > .workout-description::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #fff;
+        right: -10px;
+        top: 120px;
+    }
 
 
 
@@ -816,102 +783,103 @@ input.weight::-ms-input-placeholder {
 }
 
 
-/* ---- Accordion ---- */
-.accordion-wrapper {
-    width: 100%;
-}
+    /* ----  8.1. Accordion ---- */
 
-.accordion {
-    border-bottom: 1px solid #ddd;
-}
+    .accordion-wrapper {
+        width: 100%;
+    }
 
-.accordion .title{ 
-    padding: 15px 0;
-    letter-spacing: -0.5px;
-}
+    .accordion {
+        border-bottom: 1px solid #ddd;
+    }
 
-.accordion:last-child {
-    border-bottom: none;
-}
+    .accordion .title{ 
+        padding: 15px 0;
+        letter-spacing: -0.5px;
+    }
 
-.accordion .title a{
-    width: 100%;
-}
+    .accordion:last-child {
+        border-bottom: none;
+    }
 
-.accordion .title i {
-    margin-right: 5px;
-    color: #aaa;
-}
+    .accordion .title a{
+        width: 100%;
+    }
 
-.accordion .title a .fa-minus-square,
-.accordion .title a:hover i {
-    color: #5ab124;
-}
+    .accordion .title i {
+        margin-right: 5px;
+        color: #aaa;
+    }
 
-.accordion .title span {
-    display: block;
-    margin: -22px 20px 0;
-}
+    .accordion .title a .fa-minus-square,
+    .accordion .title a:hover i {
+        color: #5ab124;
+    }
 
-.accordion .content{
-    margin-bottom: 15px;
-    display: none;
-    margin: auto 20px;
-    color: #777;
-}
+    .accordion .title span {
+        display: block;
+        margin: -22px 20px 0;
+    }
 
-.accordion .content a {
-    color: #5ab124;
-    font-style: italic;
-    float: right;
-    margin: 15px 0;
-}
+    .accordion .content{
+        margin-bottom: 15px;
+        display: none;
+        margin: auto 20px;
+        color: #777;
+    }
+
+    .accordion .content a {
+        color: #5ab124;
+        font-style: italic;
+        float: right;
+        margin: 15px 0;
+    }
 
 
-/* ---- News ---- */
+    /* ---- 8.2. News ---- */
 
-.news li {
-    padding-top: 15px;
-}
+    .news li {
+        padding-top: 15px;
+    }
 
-.news .post {
-    height: 100px;
-    overflow: hidden;   
-}
+    .news .post {
+        height: 100px;
+        overflow: hidden;   
+    }
 
-.news .post-info {
-    float: left;
-    margin-right: 10px;
-}
+    .news .post-info {
+        float: left;
+        margin-right: 10px;
+    }
 
-.news .post-image {
-    width: 100px;
-    height: 100px;
-}
+    .news .post-image {
+        width: 100px;
+        height: 100px;
+    }
 
-.news .post-date,
-.news .post-comment {
-    background-color: #5ab124;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 2px 10px;
-    font-size: 11px;
-    display: inline-block;
-}
+    .news .post-date,
+    .news .post-comment {
+        background-color: #5ab124;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 2px 10px;
+        font-size: 11px;
+        display: inline-block;
+    }
 
-.news .post-comment {
-    background-color: #64cc24;
-    margin-left: -4px;
-}
+    .news .post-comment {
+        background-color: #64cc24;
+        margin-left: -4px;
+    }
 
-.news .post-comment span {
-    font-size: 11px;
-    margin-left: 2px;
-}
-.news .post-content {
-    display: block;
-    margin-top: 10px;
-}
+    .news .post-comment span {
+        font-size: 11px;
+        margin-left: 2px;
+    }
+    .news .post-content {
+        display: block;
+        margin-top: 10px;
+    }
 
 
 
@@ -950,11 +918,12 @@ input.weight::-ms-input-placeholder {
 
 
 /* ==========================================================================
-    9. FOOTER
+    10. FOOTER
 ============================================================================= */
 
 footer {
     background-color: #353e44;
+    color: #bbb;
 }
 
 footer > .container {
@@ -969,180 +938,167 @@ footer h5 {
 }
 
 
-footer p,
-footer li {
-    color: #bbb;
-}
-
 footer a {
-    color: #fff;
+    color: #bbb;
 }
 
 footer i {
     margin-right: 5px;
 }
 
-/* ---- newsletter ---- */
+    /* ---- 10.1. newsletter ---- */
 
-.newsletter {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    background-color: #353e44;
-    margin-top: 20px;
-}
+    .newsletter {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        background-color: #353e44;
+        margin-top: 20px;
+    }
 
-.newsletter > input,
-.newsletter > button {
-    border: 0;
-    outline: none;
-    height: 35px;
-    color: #fff;
-}
+    .newsletter > input,
+    .newsletter > button {
+        border: 0;
+        outline: none;
+        height: 35px;
+        color: #fff;
+    }
 
-.newsletter ::-webkit-input-placeholder {
-    color: #fff;
-    font-style: italic;
-}
+    .newsletter > input {
+        width: 95%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 10px;
+        background-color: #40484d;
+    }
 
-.newsletter ::-moz-placeholder {
-    color: #fff;
-    font-style: italic;
-}
+    .newsletter > button {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 
-.newsletter :-moz-placeholder {
-    color: #fff;
-    font-style: italic;
-}
+    .newsletter > button i {
+        margin: 0;
+    }
 
-.newsletter ::-ms-input-placeholder {
-    color: #fff;
-    font-style: italic;
-}
+    .newsletter ::-webkit-input-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
 
+    .newsletter ::-moz-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
 
-.newsletter > input {
-    width: 95%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 10px;
-    background-color: #40484d;
-}
+    .newsletter :-moz-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
 
-.newsletter > button {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #5ab124;
-}
+    .newsletter ::-ms-input-placeholder {
+        color: #fff;
+        font-style: italic;
+    }
 
-.newsletter > button i {
-    margin: 0;
-    padding: 0 10px;
-}
+    /* ---- 10.2. company info ---- */
 
+    .company-info li {
+        border-bottom: 1px solid #485159;
+        padding: 10px 0;
+    }
 
-/* ---- company info ---- */
+    .company-info li:first-child {
+        padding-top: 0;
+    }
 
-.company-info li {
-    border-bottom: 1px solid #485159;
-    padding: 10px 0;
-}
-
-.company-info li:first-child {
-    padding-top: 0;
-}
-
-.company-info li:last-child {
-    border-bottom: none;
-}
+    .company-info li:last-child {
+        border-bottom: none;
+    }
 
 
-/* ---- latest tweets ---- */
+    /* ---- 10.3. latest tweets ---- */
 
-.latest-tweets li {
-    margin-bottom: 10px;
-}
+    .latest-tweets li,
+    .get-in-touch li {
+        margin-bottom: 10px;
+    }
 
-.latest-tweets p {
-    padding-left: 25px;
-    margin-top: -23px;
-}
+    .latest-tweets p,
+    .get-in-touch p {
+        padding-left: 25px;
+        margin-top: -20px;
+    }
 
+    .latest-tweets a,
+    .get-in-touch span {
+        color :#fff;
+    }
 
-/* ---- get in touch ---- */
+    .latest-tweets a:hover {
+        text-decoration: underline;
+    }
 
-.get-in-touch p {
-    padding-left: 25px;
-    margin-top: -20px;
-}
+    /* ---- 10.4. get in touch ---- */
 
-.get-in-touch li {
-    margin-bottom: 10px;
-}
-
-.get-in-touch span {
-    color: #fff;
-}
-
-.get-in-touch a {
-    color: #bbb;
-}
+    .get-in-touch a {
+        color: #bbb;
+    }
 
 
-/* ---- copyright-container ---- */
+    /* ---- 10.5. copyright ---- */
 
-.copyright-container {
-    height: 70px;
-    background-color: #31393f;
-    margin-top: 90px;
-    color: #a0a9b1;
-    font-size: 11px;
-}
+    .copyright-container {
+        height: 70px;
+        background-color: #31393f;
+        margin-top: 90px;
+        color: #a0a9b1;
+        font-size: 11px;
+    }
 
-.copyright-container .container {
-    padding-top: 15px;
-}
+    .copyright-container .row {
+        margin-top: 25px;
+    }
 
-.copyright-container .container .row {
-    padding: 0;
-}
+    .copyright,
+    ul.terms,
+    ul.terms li {
+        display: inline-block;
+    }
 
-.copyright {
-    display: inline-block;
-}
+    ul.terms {
+        float: right;
+    }
 
-ul.terms {
-    display: inline-block;
-    float: right;
-}
-ul.terms li {
-    display: inline-block;
-    text-transform: uppercase;
-}
+    ul.terms li {
+        text-transform: uppercase;
+    }
 
-ul.terms li::after {
-    content: "/";
-    margin: 0 5px;
-}
+    ul.terms li::after {
+        content: "/";
+        margin: 0 5px;
+    }
 
-ul.terms li:last-child::after {
-    content: "";
-    margin: 0;
-}
+    ul.terms li:last-child::after {
+        content: "";
+        margin: 0;
+    }
 
-ul.terms li a {
-    color: #a0a9b1;
-}
+    ul.terms li a {
+        color: #a0a9b1;
+    }
 
-ul.terms li a:hover {
-    color: #5ab124;
-}
+    ul.terms li a:hover {
+        color: #5ab124;
+    }
+
+
 /* ==========================================================================
-    CLEARFIX
+    11. CLEARFIX
 ============================================================================= */
 
 /**
