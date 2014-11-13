@@ -161,7 +161,8 @@ hr.line {
     3. TYPOGRAPHY
 ============================================================================= */
 
-a {
+a,
+a:focus {
     color: #252525;
     outline: 0;
 }
@@ -169,8 +170,11 @@ a {
 a:hover, 
 a:focus {
     text-decoration: none;
-    color: #5ab124;
     outline: 0;
+}
+
+a:hover {
+    color: #5ab124;
 }
 
 h1{

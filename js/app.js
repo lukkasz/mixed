@@ -4,14 +4,38 @@
     /*****************************************************
       MULTIPLE DROPDOWN WITH CHECKBOXES
     ******************************************************/
+    var checkedItems = [],
+        $selectDropdown = $('#select-dropdown'),
+        $checkList = $('.checklist'),
+        defaultText = $selectDropdown.text();
 
-   	$('#select-dropdown').on('click', function(){
-  		$('.checklist').slideToggle(200);
+   	$selectDropdown.on('click', function(){
+  		$checkList.slideToggle(200);
   	});
+
+
+    $checkList.on('click', 'input[type="checkbox"]',function() {
+      var $this = $(this);
+      
+      if ($this.is(':checked')) {
+        checkedItems.push($this.val());
+      } else {
+        checkedItems.splice(checkedItems.indexOf($this.val()),1);
+      }
+
+    });
     
-   	$('.checklist').on('click','.btn', function(e){
-   		e.preventDefault();
-   		$('.checklist').slideUp(200);
+
+   	$checkList.on('click','.btn', function(e){
+      e.preventDefault();
+      if (!checkedItems.length) {
+        $selectDropdown.text(defaultText);
+      } else {
+        $selectDropdown.text(checkedItems.sort());
+      }
+       
+      $checkList.slideUp(200);
+      
   	});
 
 
